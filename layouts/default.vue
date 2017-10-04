@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="app">
     <navbar/>
     <nuxt/>
   </div>
 </template>
 
 <script>
-import Navbar from '~/components/Navbar.vue';
+import Navbar from '~/components/Navbar';
 
 export default {
   components: {
@@ -19,7 +19,7 @@ export default {
   @import '../assets/scss/main';
   @import '../assets/scss/_colors';
 
-  body {
+  .app {
     font-family: 'questrial';
     letter-spacing: .1rem;
   }

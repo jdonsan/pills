@@ -15,10 +15,8 @@ export default {
 
 .landing {
   display: flex;
-  height: 70vh;
-
-  background: linear-gradient(#42B883 0%, #35495E 100%);
-
+  height: 60vh;
+  background: linear-gradient($color-primary 0%, $color-secondary 100%);
   justify-content: center;
   align-items: center;
 

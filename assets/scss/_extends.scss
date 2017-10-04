@@ -1,0 +1,10 @@
+@import '_breakpoints.scss';
+
+.container {
+    padding: 1rem;
+
+    @media (min-width: $media-breakpoint-medium) {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+}
