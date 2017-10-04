@@ -21,6 +21,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    publicPath: '/pills/dist/_nuxt/',
     /*
     ** Run ESLint on save
     */
