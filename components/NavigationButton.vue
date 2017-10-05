@@ -29,6 +29,8 @@ export default {
 @import '../assets/scss/_breakpoints';
 
 img {
+  cursor: pointer;
+  
   @media (min-width: $media-breakpoint-medium) {
     display: none;
   }

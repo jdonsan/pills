@@ -1,10 +1,19 @@
 <template>
   <nav :class="['navigation', { active: open }]" @click.self="toggle">
     <ul>
+      <li>
+        <nuxt-link to="/">Home</nuxt-link>
+      </li>
       <li>Acceder</li>
-      <li>Partreon</li>
-      <li>Acerca de</li>
-      <li>Idioma</li>
+      <li>
+        <a href="https://www.patreon.com/" target="_blank">Patreon</a>
+      </li>
+      <li>
+        <nuxt-link to="/about">Acerca de</nuxt-link>
+      </li>
+      <li>
+        Idioma<img src="~/assets/img/icons/arrow_drop_down.png" alt="icon">
+      </li>
     </ul>
   </nav>
 </template>
@@ -78,6 +87,19 @@ export default {
       @media (min-width: $media-breakpoint-medium) {
         display: inline-block;
         padding: 0 0 0 1rem;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      img {
+        vertical-align: text-bottom;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
       }
     }
   }
