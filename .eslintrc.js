@@ -12,7 +12,8 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-    semi: 0
+    "semi": 0,
+    "space-before-function-paren": 0
   },
   globals: {}
 }

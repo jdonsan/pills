@@ -1,5 +1,5 @@
 <template>
-  <nav class="navigation">
+  <nav :class="['navigation', { active: open }]" @click.self="toggle">
     <ul>
       <li>Acceder</li>
       <li>Partreon</li>
@@ -10,8 +10,25 @@
 </template>
 
 <script>
+import EventBus from '~/utils/event-bus';
+
 export default {
-  name: 'navigation'
+  name: 'navigation',
+  data() {
+    return {
+      open: false
+    }
+  },
+  mounted() {
+    EventBus.$on('toggle', open => {
+      this.open = open;
+    });
+  },
+  methods: {
+    toggle() {
+      EventBus.$emit('toggle', !this.open);
+    }
+  }
 }
 </script>
 
@@ -20,25 +37,39 @@ export default {
 @import '../assets/scss/_breakpoints';
 
 .navigation {
+  transform: translate(100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: .5s;
+
+  @media (min-width: $media-breakpoint-medium) {
+    display: block;
+    width: auto;
+    position: initial;
+    transform: translate(0);
+  }
+
+  &.active {
+    transform: translate(0);
+  }
+
   ul {
     list-style: none;
     background: $color-basic-ligth;
     margin: 0;
     padding: 1rem;
-    position: fixed;
-    width: 18rem;
-    top: 0;
-    bottom: 0;
-    left: 0;
+    width: 15rem;
+    height: 100%;
+    float: right;
     box-shadow: 1px 0px 10px 0px #222;
-    display: none;
 
     @media (min-width: $media-breakpoint-medium) {
-      position: initial;
       padding: 0;
       box-shadow: 0 0 0 0;
       width: auto;
-      display: block;
     }
 
     li {
