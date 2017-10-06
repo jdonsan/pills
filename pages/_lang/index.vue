@@ -1,5 +1,5 @@
 <template>
-  <tittle value="Pills" landing="true" />
+  <tittle value="Pills" :landing="true" />
 </template>
 
 <script>
