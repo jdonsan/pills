@@ -17,15 +17,18 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
+  router: {
+    base: '/pills/'
+  },
   /*
   ** Build configuration
   */
   build: {
-    publicPath: 'pills/statics/',
+    publicPath: '/statics/',
     /*
     ** Run ESLint on save
     */
-    extend (config, ctx) {
+    extend(config, ctx) {
       if (ctx.dev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
