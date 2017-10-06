@@ -10,7 +10,8 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "node-sass": "^4.5.3",
