@@ -14,11 +14,11 @@
     "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
-    "node-sass": "^4.5.3",
     "nuxt": "^1.0.0-rc11",
-    "sass-loader": "^6.0.6"
   },
   "devDependencies": {
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
     "babel-eslint": "^7.2.3",
     "eslint": "^4.3.0",
     "eslint-config-standard": "^10.2.1",
