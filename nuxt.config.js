@@ -21,7 +21,6 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    publicPath: '/pills/dist/statics/',
     /*
     ** Run ESLint on save
     */
