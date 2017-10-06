@@ -4,15 +4,15 @@
       <li>
         <nuxt-link to="/">Home</nuxt-link>
       </li>
-      <li>Acceder</li>
+      <li>{{ $t('default.login') }}</li>
       <li>
         <a href="https://www.patreon.com/" target="_blank">Patreon</a>
       </li>
       <li>
-        <nuxt-link to="/about">Acerca de</nuxt-link>
+        <nuxt-link to="/about">{{ $t('default.about') }}</nuxt-link>
       </li>
       <li>
-        Idioma<img src="~/assets/img/icons/arrow_drop_down.png" alt="icon">
+        {{ $t('default.language') }}<img src="~/assets/img/icons/arrow_drop_down.png" alt="icon">
       </li>
     </ul>
   </nav>
@@ -73,6 +73,7 @@ export default {
     width: 15rem;
     height: 100%;
     float: right;
+    text-align: center;
     box-shadow: 1px 0px 10px 0px #222;
 
     @media (min-width: $media-breakpoint-medium) {
@@ -82,11 +83,11 @@ export default {
     }
 
     li {
-      padding: .5rem 0;
+      padding: 1rem 0;
 
       @media (min-width: $media-breakpoint-medium) {
         display: inline-block;
-        padding: 0 0 0 1rem;
+        padding: 0 0 0 1.5rem;
       }
 
       &:hover {
@@ -100,6 +101,10 @@ export default {
       a {
         color: inherit;
         text-decoration: none;
+
+        &.nuxt-link-exact-active {
+          border-bottom: 3px solid #222;
+        }
       }
     }
   }

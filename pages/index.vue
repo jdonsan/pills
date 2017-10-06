@@ -1,14 +1,5 @@
-<template>
-  <landing />
-</template>
-
 <script>
-import Landing from '~/components/Landing.vue'
-
-export default {
-  components: {
-    Landing
-  }
-}
+import Index from '~/pages/_lang/index';
+export default Index;
 </script>
 

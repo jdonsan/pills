@@ -1,7 +1,4 @@
 module.exports = {
-  /*
-  ** Headers of the page
-  */
   head: {
     title: 'pills',
     meta: [
@@ -13,21 +10,15 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  /*
-  ** Customize the progress bar color
-  */
   loading: { color: '#3B8070' },
   router: {
-    base: '/pills/'
+    base: '/pills/',
+    middleware: 'i18n'
   },
-  /*
-  ** Build configuration
-  */
+  plugins: ['~/plugins/i18n.js',],
   build: {
+    vendor: ['vue-i18n'],
     publicPath: '/statics/',
-    /*
-    ** Run ESLint on save
-    */
     extend(config, ctx) {
       if (ctx.dev && ctx.isClient) {
         config.module.rules.push({
@@ -38,5 +29,8 @@ module.exports = {
         })
       }
     }
+  },
+  generate: {
+    routes: ['/', '/about', '/en', '/en/about']
   }
 }
