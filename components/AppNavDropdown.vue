@@ -1,5 +1,5 @@
 <template>
-  <li class="app-nav-menu-dropdown">
+  <li class="app-nav-dropdown">
     {{ value }}<img src="~/assets/img/icons/arrow_drop_down.png" alt="icon">
     <ul>
       <slot></slot>
@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: 'app-nav-menu-dropdown',
+  name: 'app-nav-dropdown',
   props: {
     value: { type: String, required: true }
   }
@@ -20,7 +20,7 @@ export default {
 @import '../assets/scss/_colors';
 @import '../assets/scss/_breakpoints';
 
-.app-nav-menu-dropdown {
+.app-nav-dropdown {
   padding: 1rem 0;
   position: relative;
 

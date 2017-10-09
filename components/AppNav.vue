@@ -1,32 +1,16 @@
 <template>
   <nav :class="['app-nav', { active: open }]" @click.self="toggle">
-    <app-nav-menu>
-      <app-nav-menu-link to="/login" :value="$t('default.login')" @click.native="toggle" />
-      <app-nav-menu-link to="https://www.patreon.com/" value="Patreon" :external="true" />
-      <app-nav-menu-link to="/about" :value="$t('default.about')" @click.native="toggle" />
-      <app-nav-menu-dropdown :value="$t('default.language')">
-        <app-nav-menu-dropdown-item label="Español" />
-        <app-nav-menu-dropdown-item label="Inglés" />
-      </app-nav-menu-dropdown>
-    </app-nav-menu>
+    <ul>
+      <slot></slot>
+    </ul>
   </nav>
 </template>
 
 <script>
 import EventBus from '~/utils/event-bus';
-import AppNavMenu from '~/components/AppNavMenu';
-import AppNavMenuLink from '~/components/AppNavMenuLink';
-import AppNavMenuDropdown from '~/components/AppNavMenuDropdown';
-import AppNavMenuDropdownItem from '~/components/AppNavMenuDropdownItem';
 
 export default {
   name: 'app-nav',
-  components: {
-    AppNavMenu,
-    AppNavMenuLink,
-    AppNavMenuDropdown,
-    AppNavMenuDropdownItem
-  },
   data() {
     return {
       open: false
@@ -46,6 +30,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/scss/_colors';
 @import '../assets/scss/_breakpoints';
 
 .app-nav {
@@ -66,6 +51,24 @@ export default {
 
   &.active {
     transform: translate(0);
+  }
+
+  ul {
+    list-style: none;
+    background: $color-basic-ligth;
+    margin: 0;
+    padding: 1rem;
+    width: 15rem;
+    height: 100%;
+    float: right;
+    text-align: center;
+    box-shadow: 1px 0px 10px 0px #222;
+
+    @media (min-width: $media-breakpoint-medium) {
+      padding: 0;
+      box-shadow: 0 0 0 0;
+      width: auto;
+    }
   }
 }
 </style>

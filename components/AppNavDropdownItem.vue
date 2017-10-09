@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'app-nav-menu-dropdown-item',
+  name: 'app-nav-dropdown-item',
   props: {
     label: { type: String, required: true }
   }
