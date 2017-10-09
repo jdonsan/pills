@@ -5,7 +5,8 @@
       <app-nav-menu-link to="https://www.patreon.com/" value="Patreon" :external="true" />
       <app-nav-menu-link to="/about" :value="$t('default.about')" @click.native="toggle" />
       <app-nav-menu-dropdown :value="$t('default.language')">
-
+        <app-nav-menu-dropdown-item label="Español" />
+        <app-nav-menu-dropdown-item label="Inglés" />
       </app-nav-menu-dropdown>
     </app-nav-menu>
   </nav>
@@ -16,13 +17,15 @@ import EventBus from '~/utils/event-bus';
 import AppNavMenu from '~/components/AppNavMenu';
 import AppNavMenuLink from '~/components/AppNavMenuLink';
 import AppNavMenuDropdown from '~/components/AppNavMenuDropdown';
+import AppNavMenuDropdownItem from '~/components/AppNavMenuDropdownItem';
 
 export default {
   name: 'app-nav',
   components: {
     AppNavMenu,
     AppNavMenuLink,
-    AppNavMenuDropdown
+    AppNavMenuDropdown,
+    AppNavMenuDropdownItem
   },
   data() {
     return {

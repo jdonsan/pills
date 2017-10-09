@@ -1,10 +1,8 @@
 <template>
   <li class="app-nav-menu-dropdown">
     {{ value }}<img src="~/assets/img/icons/arrow_drop_down.png" alt="icon">
-
     <ul>
-      <li>Español</li>
-      <li>Inglés</li>
+      <slot></slot>
     </ul>
   </li>
 </template>
