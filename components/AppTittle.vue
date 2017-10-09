@@ -1,12 +1,12 @@
 <template>
-  <section :class="['tittle', { landing: landing }]">
+  <section :class="['app-tittle', { landing: landing }]">
     <h2>{{ value }}</h2>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'tittle',
+  name: 'app-tittle',
   props: {
     'value': String,
     'landing': {
@@ -20,7 +20,7 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/scss/_colors';
 
-.tittle {
+.app-tittle {
   display: flex;
   height: 20vh;
   background: linear-gradient($color-primary 0%, $color-secondary 100%);

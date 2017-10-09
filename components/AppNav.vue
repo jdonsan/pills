@@ -1,9 +1,6 @@
 <template>
-  <nav :class="['navigation', { active: open }]" @click.self="toggle">
+  <nav :class="['app-nav', { active: open }]" @click.self="toggle">
     <ul>
-      <li>
-        <nuxt-link to="/">Home</nuxt-link>
-      </li>
       <li>{{ $t('default.login') }}</li>
       <li>
         <a href="https://www.patreon.com/" target="_blank">Patreon</a>
@@ -22,7 +19,7 @@
 import EventBus from '~/utils/event-bus';
 
 export default {
-  name: 'navigation',
+  name: 'app-nav',
   data() {
     return {
       open: false
@@ -45,7 +42,7 @@ export default {
 @import '../assets/scss/_colors';
 @import '../assets/scss/_breakpoints';
 
-.navigation {
+.app-nav {
   transform: translate(100%);
   position: fixed;
   top: 0;

@@ -1,20 +1,20 @@
 <template>
-  <header class="navbar">
-    <h1>Pills</h1>
-    <navigation />
-    <navigation-button />
+  <header class="app-header">
+    <h1><nuxt-link to="/">Pills</nuxt-link></h1>
+    <app-nav />
+    <app-nav-button />
   </header>
 </template>
 
 <script>
-import Navigation from '~/components/Navigation';
-import NavigationButton from '~/components/NavigationButton';
+import AppNav from '~/components/AppNav';
+import AppNavButton from '~/components/AppNavButton';
 
 export default {
-  name: 'navbar',
+  name: 'app-header',
   components: {
-    Navigation,
-    NavigationButton
+    AppNav,
+    AppNavButton
   }
 };
 </script>
@@ -24,7 +24,7 @@ export default {
 @import '../assets/scss/_breakpoints';
 @import '../assets/scss/_extends';
 
-.navbar {
+.app-header {
   @extend .container;
 
   background: $color-basic-ligth;
@@ -37,6 +37,11 @@ export default {
 
   h1 {
     margin: 0;
+
+    a {
+      color: #222;
+      text-decoration: none;
+    }
   }
 }
 </style>

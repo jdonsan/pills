@@ -1,16 +1,16 @@
 <template>
   <div class="app">
-    <navbar/>
+    <app-header/>
     <nuxt/>
   </div>
 </template>
 
 <script>
-import Navbar from '~/components/Navbar';
+import AppHeader from '~/components/AppHeader';
 
 export default {
   components: {
-    Navbar
+    AppHeader
   }
 };
 </script>

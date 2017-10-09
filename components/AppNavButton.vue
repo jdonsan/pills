@@ -6,7 +6,7 @@
 import EventBus from '~/utils/event-bus';
 
 export default {
-  name: 'navigation-button',
+  name: 'app-nav-button',
   data: function() {
     return {
       open: false

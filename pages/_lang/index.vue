@@ -1,13 +1,13 @@
 <template>
-  <tittle value="Pills" :landing="true" />
+  <app-tittle value="Pills" :landing="true" />
 </template>
 
 <script>
-import Tittle from '~/components/Tittle';
+import AppTittle from '~/components/AppTittle';
 
 export default {
   components: {
-    Tittle
+    AppTittle
   }
 }
 </script>
