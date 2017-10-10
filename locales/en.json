@@ -2,6 +2,8 @@
     "default": {
       "about": "About",
       "login": "Log in",
-      "language": "Language"
+      "language": "Language",
+      "spanish": "Spanish",
+      "english": "English"
     }
   }

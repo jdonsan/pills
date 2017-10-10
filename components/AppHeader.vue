@@ -1,15 +1,25 @@
 <template>
   <header class="app-header">
     <h1>
-      <nuxt-link to="/">Pills</nuxt-link>
+      <app-nuxt-link to="/">Pills</app-nuxt-link>
     </h1>
     <app-nav>
-      <app-nav-link to="/login" :value="$t('default.login')" />
-      <app-nav-link to="https://www.patreon.com/" value="Patreon" :external="true" />
-      <app-nav-link to="/about" :value="$t('default.about')" />
-      <app-nav-dropdown :value="$t('default.language')">
-        <app-nav-dropdown-item label="Español" />
-        <app-nav-dropdown-item label="Inglés" />
+      <app-nav-link to="/login">
+        {{ $t('default.login') }}
+      </app-nav-link>
+      <app-nav-link to="https://www.patreon.com/" :external="true">
+        Patreon
+      </app-nav-link>
+      <app-nav-link to="/about">
+        {{ $t('default.about') }}
+      </app-nav-link>
+      <app-nav-dropdown :label="$t('default.language')">
+        <app-nav-dropdown-link :to="$route.fullPath.replace(/^\/[^\/]+/, '')">
+          {{ $t('default.spanish') }}
+        </app-nav-dropdown-link>
+        <app-nav-dropdown-link :to="`/en` + $route.fullPath.replace('/en/', '')">
+          {{ $t('default.english') }}
+        </app-nav-dropdown-link>
       </app-nav-dropdown>
     </app-nav>
     <app-nav-button />
@@ -20,8 +30,9 @@
 import AppNav from '~/components/AppNav';
 import AppNavLink from '~/components/AppNavLink';
 import AppNavDropdown from '~/components/AppNavDropdown';
-import AppNavDropdownItem from '~/components/AppNavDropdownItem';
+import AppNavDropdownLink from '~/components/AppNavDropdownLink';
 import AppNavButton from '~/components/AppNavButton';
+import AppNuxtLink from '~/components/AppNuxtLink';
 
 export default {
   name: 'app-header',
@@ -29,8 +40,9 @@ export default {
     AppNav,
     AppNavLink,
     AppNavDropdown,
-    AppNavDropdownItem,
-    AppNavButton
+    AppNavDropdownLink,
+    AppNavButton,
+    AppNuxtLink
   }
 };
 </script>

@@ -3,23 +3,14 @@
 </template>
 
 <script>
-import EventBus from '~/utils/event-bus';
+import toggleMenu from '~/mixins/toggle-menu';
 
 export default {
   name: 'app-nav-button',
+  mixins: [toggleMenu],
   data: function() {
     return {
       open: false
-    }
-  },
-  mounted() {
-    EventBus.$on('toggle', open => {
-      this.open = open;
-    });
-  },
-  methods: {
-    toggle() {
-      EventBus.$emit('toggle', !this.open);
     }
   }
 }

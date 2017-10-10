@@ -1,6 +1,6 @@
 <template>
   <li class="app-nav-dropdown">
-    {{ value }}<img src="~/assets/img/icons/arrow_drop_down.png" alt="icon">
+    {{ label }}<img src="~/assets/img/icons/arrow_drop_down.png" alt="icon">
     <ul>
       <slot></slot>
     </ul>
@@ -11,7 +11,7 @@
 export default {
   name: 'app-nav-dropdown',
   props: {
-    value: { type: String, required: true }
+    label: { type: String, required: true }
   }
 }
 </script>
@@ -45,7 +45,7 @@ export default {
   ul {
     list-style: none;
     margin: 0;
-    padding: 1rem 0;
+    padding: 1rem 0 .5rem;
 
     @media (min-width: $media-breakpoint-medium) {
       background: $color-basic-ligth;
@@ -64,7 +64,7 @@ export default {
     }
 
     li {
-        padding: 1rem;
+        padding: .5rem;
     }
   }
 }

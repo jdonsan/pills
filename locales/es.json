@@ -2,6 +2,8 @@
   "default": {
     "about": "Acerca de",
     "login": "Acceder",
-    "language": "Idioma"
+    "language": "Idioma",
+    "spanish": "Español",
+    "english": "Inglés"
   }
 }

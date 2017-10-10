@@ -1,29 +1,27 @@
 <template>
   <li class="app-nav-link" @click="toggle">
-    <a v-if="external" :href="to" target="_blank">{{ value }}</a>
-    <nuxt-link v-else :to="to">{{ value }}</nuxt-link>
+    <a v-if="external" :href="to" target="_blank">
+      <slot></slot>
+    </a>
+    <app-nuxt-link v-else :to="to">
+      <slot></slot>
+    </app-nuxt-link>
   </li>
 </template>
 
 <script>
-import EventBus from '~/utils/event-bus';
+import toggleMenu from '~/mixins/toggle-menu';
+import AppNuxtLink from '~/components/AppNuxtLink';
 
 export default {
   name: 'app-nav-link',
+  components: {
+    AppNuxtLink
+  },
+  mixins: [toggleMenu],
   props: {
-    value: { type: String, required: true },
     to: { type: String, required: true },
     external: { type: Boolean, required: false, default: false }
-  },
-  mounted() {
-    EventBus.$on('toggle', open => {
-      this.open = open;
-    });
-  },
-  methods: {
-    toggle() {
-      EventBus.$emit('toggle', !this.open);
-    }
   }
 }
 </script>
