@@ -31,6 +31,6 @@ module.exports = {
     }
   },
   generate: {
-    routes: ['/', '/about', '/en', '/en/about']
+    routes: ['/', '/about', '/login', '/en', '/en/about', '/en/login']
   }
 }
