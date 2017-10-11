@@ -13,8 +13,10 @@ export default {
 <style lang="scss" scoped>
 .subtitle {
   text-transform: uppercase;
-  color: #222;
-  border-bottom: 3px solid #222;
+  color: #fff;
+  padding: .3rem 1rem;
+  background: #222;
+  border-radius: 20rem;
   display: inline-block;
   font-weight: bold;
 }
