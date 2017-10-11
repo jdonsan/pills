@@ -1,14 +1,14 @@
 <template>
-  <app-tittle :value="$t('default.about')" />
+  <app-title>{{ $t('default.about') }}</app-title>
 </template>
 
 <script>
-import AppTittle from '~/components/AppTittle';
+import AppTitle from '~/components/AppTitle';
 
 export default {
   name: 'about',
   components: {
-    AppTittle
+    AppTitle
   }
 }
 </script>

@@ -21,8 +21,8 @@ export default {
 @import '../assets/scss/_breakpoints';
 
 .app-nav-dropdown {
-  padding: 1rem 0;
   position: relative;
+  padding: 1rem 0;
 
   @media (min-width: $media-breakpoint-medium) {
     display: inline-block;
@@ -39,20 +39,30 @@ export default {
 
   img {
     vertical-align: text-bottom;
+    display: none;
+
+    @media (min-width: $media-breakpoint-medium) {
+      display: initial;
+    }
   }
 
 
   ul {
     list-style: none;
-    margin: 0;
-    padding: 1rem 0 .5rem;
+    margin: 1rem 0;
+    padding: 0;
+    border-top: 1px solid $color-basic-dark;
 
     @media (min-width: $media-breakpoint-medium) {
+      border-top: 0;
+      margin: 0;
+      padding: 1rem 0 .5rem;
       background: $color-basic-ligth;
       position: absolute;
       display: none;
       top: 100%;
       right: -1rem;
+      text-align: center;
 
       &:hover {
         display: block;
@@ -64,7 +74,11 @@ export default {
     }
 
     li {
+      padding: 1rem 0;
+
+      @media (min-width: $media-breakpoint-medium) {
         padding: .5rem;
+      }
     }
   }
 }

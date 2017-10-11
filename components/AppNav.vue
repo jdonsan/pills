@@ -49,10 +49,10 @@ export default {
     background: $color-basic-ligth;
     margin: 0;
     padding: 1rem;
-    width: 15rem;
+    width: 12rem;
     height: 100%;
     float: right;
-    text-align: center;
+    text-align: right;
     box-shadow: 1px 0px 10px 0px #222;
 
     @media (min-width: $media-breakpoint-medium) {

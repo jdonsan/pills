@@ -1,13 +1,36 @@
 <template>
-  <app-tittle value="Pills" :landing="true" />
+  <main>
+    <app-title :landing="true">
+      Pills
+    </app-title>
+
+    <preview-pills title="Nuevo en Pills">
+      <preview-pills-item></preview-pills-item>
+      <preview-pills-item></preview-pills-item>
+      <preview-pills-item></preview-pills-item>
+      <preview-pills-item></preview-pills-item>
+      <preview-pills-item></preview-pills-item>
+      <preview-pills-item></preview-pills-item>
+    </preview-pills>
+
+    <preview-pills title="Próximamente en Pills">
+      <preview-pills-item></preview-pills-item>
+      <preview-pills-item></preview-pills-item>
+    </preview-pills>
+
+  </main>
 </template>
 
 <script>
-import AppTittle from '~/components/AppTittle';
+import AppTitle from '~/components/AppTitle';
+import PreviewPills from '~/components/PreviewPills';
+import PreviewPillsItem from '~/components/PreviewPillsItem';
 
 export default {
   components: {
-    AppTittle
+    AppTitle,
+    PreviewPills,
+    PreviewPillsItem
   }
 }
 </script>
