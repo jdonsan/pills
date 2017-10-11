@@ -31,6 +31,11 @@ export default {
     AppTitle,
     PreviewPills,
     PreviewPillsItem
+  },
+  head () {
+    return {
+      title: 'Home'
+    }
   }
 }
 </script>

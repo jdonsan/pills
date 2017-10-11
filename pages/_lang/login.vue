@@ -9,6 +9,11 @@ export default {
   name: 'login',
   components: {
     AppTitle
+  },
+  head () {
+    return {
+      title: this.$t('default.login')
+    }
   }
 }
 </script>

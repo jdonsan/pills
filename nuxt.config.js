@@ -1,6 +1,7 @@
 module.exports = {
   head: {
-    title: 'pills',
+    title: ' ',
+    titleTemplate: '%s - Pills: Aprende mucho en poco tiempo',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
