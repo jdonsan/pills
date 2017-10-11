@@ -29,6 +29,8 @@ export default {
 
 .preview-pills {
   @extend .container;
+
+  padding-top: 3rem;
 }
 
 .preview-pills-container {
@@ -46,7 +48,7 @@ export default {
 
   div {
     background: $color-secondary;
-    height: 20rem;
+   // height: 20rem;
   }
 }
 </style>
