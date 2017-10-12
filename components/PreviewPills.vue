@@ -24,7 +24,6 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/scss/_extends';
-@import '../assets/scss/_colors';
 @import '../assets/scss/_breakpoints';
 
 .preview-pills {
@@ -44,11 +43,6 @@ export default {
 
   @media (min-width: $media-breakpoint-large) {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  div {
-    background: $color-secondary;
-   // height: 20rem;
   }
 }
 </style>
