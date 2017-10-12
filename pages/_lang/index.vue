@@ -1,7 +1,7 @@
 <template>
   <main>
     <app-title :landing="true">
-      Pills
+      Aprende mucho en poco tiempo
     </app-title>
 
     <preview-pills title="Nuevo en Pills">
