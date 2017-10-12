@@ -11,12 +11,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/scss/_colors';
+
 .subtitle {
   text-transform: uppercase;
   color: #fff;
   padding: .3rem 1rem;
-  background: #222;
-  border-radius: 20rem;
+  background: $color-dark;
   display: inline-block;
   font-weight: bold;
 }
