@@ -12,11 +12,17 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/scss/_colors';
+  @import '../assets/scss/_breakpoints';
 
 .subtitle {
   text-transform: uppercase;
   display: inline-block;
   font-weight: bold;
+  padding: 0 1rem;
+
+  @media (min-width: $media-breakpoint-medium) {
+    padding: 0;
+  }
 }
 </style>
 
