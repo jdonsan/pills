@@ -10,7 +10,6 @@
       <preview-pills-item></preview-pills-item>
       <preview-pills-item></preview-pills-item>
       <preview-pills-item></preview-pills-item>
-      <preview-pills-item></preview-pills-item>
     </preview-pills>
 
     <preview-pills title="Próximamente en Pills">

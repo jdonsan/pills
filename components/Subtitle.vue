@@ -15,9 +15,6 @@ export default {
 
 .subtitle {
   text-transform: uppercase;
-  color: #fff;
-  padding: .3rem 1rem;
-  background: $color-dark;
   display: inline-block;
   font-weight: bold;
 }
