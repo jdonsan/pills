@@ -11,7 +11,7 @@ export default {
     tags: {
       type: Array,
       required: false,
-      default: ['front', 'ux', 'back']
+      default: () => ['front', 'ux', 'back']
     }
   },
   methods: {
