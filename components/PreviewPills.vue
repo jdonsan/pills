@@ -34,8 +34,8 @@ export default {
 
 .preview-pills-container {
   display: grid;
-  grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
+  grid-column-gap: .5rem;
+  grid-row-gap: 0.1rem;
 
   @media (min-width: $media-breakpoint-small) {
     grid-template-columns: repeat(2, 1fr);

@@ -23,7 +23,8 @@ export default {
 .tag-list {
   list-style: none;
   padding: 0;
-  margin: .5rem 0;
+  margin: 0;
+  margin-top: 2rem;
   width: 100%;
 
   li {
