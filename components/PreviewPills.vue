@@ -28,8 +28,8 @@ export default {
 
 .preview-pills {
   @extend .container;
-
-  padding: 2rem 0;
+  
+  padding: 2rem 0 1rem;
 }
 
 .preview-pills-container {
