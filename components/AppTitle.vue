@@ -1,5 +1,6 @@
 <template>
   <section :class="['app-title', { landing: landing }]">
+    <img src="~/assets/img/bg.jpg" alt="background">
     <h2>
       <slot></slot>
     </h2>
@@ -21,7 +22,7 @@ export default {
 
 .app-title {
   display: flex;
-  height: 20vh;
+  height: 10rem;
   text-align: center;
   background: linear-gradient($color-primary 0%, $color-secondary 100%);
   justify-content: center;
@@ -30,8 +31,24 @@ export default {
   font-size: 1.5rem;
 
 
+  img {
+    display: none;
+  }
+
   &.landing {
-    height: 60vh;
+    height: 25rem;
+    background: #222;
+    position: relative;
+    z-index: 2;
+
+    img {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.4;
+    }
 
     @media (min-width: $media-breakpoint-medium) {
       font-size: 2.5rem;

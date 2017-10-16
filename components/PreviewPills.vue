@@ -28,13 +28,11 @@ export default {
 
 .preview-pills {
   @extend .container;
-  
-  padding: 2rem 0 1rem;
 }
 
 .preview-pills-container {
   display: grid;
-  grid-column-gap: .5rem;
+  grid-column-gap: 1rem;
   grid-row-gap: 0.1rem;
 
   @media (min-width: $media-breakpoint-small) {

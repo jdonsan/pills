@@ -32,6 +32,7 @@ export default {
   bottom: 0;
   right: 0;
   transition: .5s;
+  z-index: 99;
 
   @media (min-width: $media-breakpoint-medium) {
     display: block;

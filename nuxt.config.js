@@ -29,6 +29,14 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+
+      const vueLoader = config.module.rules.find(rule => rule.loader === 'vue-loader');
+
+      vueLoader.options.transformToRequire = {
+        video: 'poster',
+        video: 'src',
+        source: 'src'
+      }
     }
   },
   generate: {

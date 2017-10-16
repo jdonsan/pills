@@ -15,7 +15,7 @@ export default {
 @import '../assets/scss/_breakpoints';
 
 .app-footer {
-  height: 5rem;
+  height: 7rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,13 +27,13 @@ export default {
     &:before {
       content: '';
       width: 100%;
-      height: 100%;
+      height: 6rem;
       position: absolute;
       background: inherit;
       z-index: -1;
       top: 0;
       transform-origin: top left;
-      transform: skewY(-2deg);
+      transform: skewY(-4deg);
     }
   }
 }

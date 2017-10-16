@@ -4,14 +4,15 @@
       Aprende mucho en poco tiempo
     </app-title>
 
-    <preview-pills title="Nuevo en Pills">
+    <call-to-action />
+
+    <preview-pills title="Y además...">
       <preview-pills-item v-for="pill in newPills" :key="pill.id" :pill="pill" />
     </preview-pills>
 
-    <preview-pills title="Próximamente en Pills">
+    <preview-pills title="Próximamente...">
       <preview-pills-item v-for="pill in soonPills" :key="pill.id" :pill="pill" />
     </preview-pills>
-
   </main>
 </template>
 
@@ -19,12 +20,14 @@
 import AppTitle from '~/components/AppTitle';
 import PreviewPills from '~/components/PreviewPills';
 import PreviewPillsItem from '~/components/PreviewPillsItem';
+import CallToAction from '~/components/CallToAction';
 
 export default {
   components: {
     AppTitle,
     PreviewPills,
-    PreviewPillsItem
+    PreviewPillsItem,
+    CallToAction
   },
   head() {
     return {
