@@ -22,7 +22,7 @@ export default {
 
 .app-title {
   display: flex;
-  height: 10rem;
+  height: 5rem;
   text-align: center;
   background: linear-gradient($color-primary 0%, $color-secondary 100%);
   justify-content: center;

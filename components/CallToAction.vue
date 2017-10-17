@@ -1,7 +1,7 @@
 <template>
   <section class="call-to-action">
     <div>
-      <app-nuxt-link class="button" to="/">Empieza aquí</app-nuxt-link>
+      <app-nuxt-link class="button" to="/pill/1">Empieza aquí</app-nuxt-link>
     </div>
     <video controls poster="~/assets/img/vue.jpg">
       <source src="~/assets/videos/vue-debug.mp4" type="video/mp4">
