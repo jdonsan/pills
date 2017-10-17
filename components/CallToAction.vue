@@ -1,10 +1,9 @@
 <template>
   <section class="call-to-action">
-    <div class="call-to-action-title">
-
-      <app-nuxt-link class="button" to="/">Ver Video</app-nuxt-link>
+    <div>
+      <app-nuxt-link class="button" to="/">Empieza aquí</app-nuxt-link>
     </div>
-    <video controls>
+    <video controls poster="~/assets/img/vue.jpg">
       <source src="~/assets/videos/vue-debug.mp4" type="video/mp4">
     </video>
   </section>
@@ -28,20 +27,20 @@ export default {
 
 .call-to-action {
   @extend .container;
+  text-align: center;
   background: transparent;
   border-radius: 4px;
-  margin-top: -2.5rem;
   z-index: 4;
   position: relative;
+  margin-top: -9rem;
 
-  @media (min-width: $media-breakpoint-medium) {
-    margin-top: -5rem;
-    display: flex;
-    align-items: flex-start;
-  }
+  @media (min-width: $media-breakpoint-medium) {}
 
   video {
     width: 100%;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 
     @media (min-width: $media-breakpoint-medium) {
       width: 70%;
@@ -54,20 +53,12 @@ export default {
     text-transform: uppercase;
     color: $color-basic-ligth;
     padding: 1rem 1.5rem;
+    margin: 1rem;
     border-radius: 2px;
     font-weight: bold;
     text-decoration: none;
-  }
-}
-
-.call-to-action-title {
-  width: 100%;
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-
-  @media (min-width: $media-breakpoint-medium) {
-    margin-top: 2.5rem;
+    text-align: center;
+    display: inline-block;
   }
 }
 </style>

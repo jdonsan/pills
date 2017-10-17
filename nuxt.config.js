@@ -34,7 +34,6 @@ module.exports = {
 
       vueLoader.options.transformToRequire = {
         video: 'poster',
-        video: 'src',
         source: 'src'
       }
     }

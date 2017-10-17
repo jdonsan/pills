@@ -28,6 +28,7 @@ export default {
 
 .preview-pills {
   @extend .container;
+  margin-bottom: 1rem;
 }
 
 .preview-pills-container {

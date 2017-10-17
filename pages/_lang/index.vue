@@ -13,6 +13,10 @@
     <preview-pills title="Próximamente...">
       <preview-pills-item v-for="pill in soonPills" :key="pill.id" :pill="pill" />
     </preview-pills>
+
+    <preview-pills title="Cursos completos">
+      
+    </preview-pills>
   </main>
 </template>
 
