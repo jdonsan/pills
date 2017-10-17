@@ -27,13 +27,13 @@ export default {
     &:before {
       content: '';
       width: 100%;
-      height: 6rem;
+      height: 100%;
       position: absolute;
       background: inherit;
       z-index: -1;
       top: 0;
       transform-origin: top left;
-      transform: skewY(-4deg);
+      transform: skewY(-2deg);
     }
   }
 }
