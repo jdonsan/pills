@@ -23,6 +23,9 @@ export default {
   @import '../assets/scss/_colors';
 
   .app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: 'questrial';
     letter-spacing: .1rem;
   }
