@@ -15,6 +15,7 @@ export default {
 @import '../assets/scss/_breakpoints';
 
 .app-footer {
+  margin-top: auto;
   height: 7rem;
   display: flex;
   align-items: center;
