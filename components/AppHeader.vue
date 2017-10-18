@@ -7,7 +7,7 @@
       <app-nav-link to="/login">
         {{ $t('default.login') }}
       </app-nav-link>
-      <app-nav-link to="https://www.patreon.com/" :external="true">
+      <app-nav-link to="https://www.patreon.com/_pills" :external="true">
         Patreon
       </app-nav-link>
       <app-nav-link to="/about">
@@ -60,6 +60,7 @@ export default {
   right: 0;
   height: 3rem;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
 

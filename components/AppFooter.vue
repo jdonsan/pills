@@ -16,7 +16,7 @@ export default {
 
 .app-footer {
   margin-top: auto;
-  height: 7rem;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
