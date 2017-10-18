@@ -60,7 +60,6 @@ export default {
   right: 0;
   height: 3rem;
   display: flex;
-  width: 100%;
   justify-content: space-between;
   align-items: center;
 
