@@ -1,5 +1,7 @@
 # Pills
 
+[![Build Status](https://travis-ci.org/jdonsan/pills.svg?branch=master)](https://travis-ci.org/jdonsan/pills)
+
 > Proyecto Pills
 
 ## Build Setup
