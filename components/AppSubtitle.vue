@@ -1,12 +1,12 @@
 <template>
-  <h3 class="subtitle">
+  <h3 class="app-subtitle">
     <slot></slot>
   </h3>
 </template>
 
 <script>
 export default {
-  name: 'subtitle'
+  name: 'app-subtitle'
 }
 </script>
 
@@ -14,7 +14,7 @@ export default {
 @import '../assets/scss/_colors';
   @import '../assets/scss/_breakpoints';
 
-.subtitle {
+.app-subtitle {
   text-transform: uppercase;
   display: inline-block;
   font-weight: bold;

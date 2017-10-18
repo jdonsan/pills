@@ -1,5 +1,5 @@
 <template>
-  <div class="preview-pills-item">
+  <div class="pill-card">
     <h4>
       <app-nuxt-link to="/about">{{ pill.title }}</app-nuxt-link>
     </h4>
@@ -13,7 +13,7 @@ import TagList from '~/components/TagList';
 import AppNuxtLink from '~/components/AppNuxtLink';
 
 export default {
-  name: 'preview-pills-item',
+  name: 'pill-card',
   components: {
     TagList,
     AppNuxtLink
@@ -27,7 +27,7 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/scss/_colors';
 
-.preview-pills-item {
+.pill-card {
   background: $color-basic-dark;
   border-radius: 2px;
   padding: 1rem;

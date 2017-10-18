@@ -1,36 +1,34 @@
 <template>
   <main>
-    <app-title :landing="true">
-      Aprende mucho en poco tiempo
-    </app-title>
+    <app-title :landing="true">Aprende mucho en poco tiempo</app-title>
 
     <call-to-action />
 
-    <preview-pills title="Y además...">
-      <preview-pills-item v-for="pill in newPills" :key="pill.id" :pill="pill" />
-    </preview-pills>
+    <pill-section title="Y además...">
+      <pill-card v-for="pill in newPills" :key="pill.id" :pill="pill" />
+    </pill-section>
 
-    <preview-pills title="Próximamente...">
-      <preview-pills-item v-for="pill in soonPills" :key="pill.id" :pill="pill" />
-    </preview-pills>
+    <pill-section title="Próximamente...">
+      <pill-card v-for="pill in soonPills" :key="pill.id" :pill="pill" />
+    </pill-section>
 
-    <preview-pills title="Cursos completos">
+    <pill-section title="Cursos completos">
       
-    </preview-pills>
+    </pill-section>
   </main>
 </template>
 
 <script>
 import AppTitle from '~/components/AppTitle';
-import PreviewPills from '~/components/PreviewPills';
-import PreviewPillsItem from '~/components/PreviewPillsItem';
+import PillSection from '~/components/PillSection';
+import PillCard from '~/components/PillCard';
 import CallToAction from '~/components/CallToAction';
 
 export default {
   components: {
     AppTitle,
-    PreviewPills,
-    PreviewPillsItem,
+    PillSection,
+    PillCard,
     CallToAction
   },
   head() {

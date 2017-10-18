@@ -1,20 +1,20 @@
 <template>
-  <section class="preview-pills">
-    <subtitle>{{ title }}</subtitle>
+  <section class="pill-section">
+    <app-subtitle>{{ title }}</app-subtitle>
 
-    <div class="preview-pills-container">
+    <div class="pill-section-container">
       <slot></slot>
     </div>
   </section>
 </template>
 
 <script>
-import Subtitle from '~/components/Subtitle';
+import AppSubtitle from '~/components/AppSubtitle';
 
 export default {
-  name: 'preview-pills',
+  name: 'pill-section',
   components: {
-    Subtitle
+    AppSubtitle
   },
   props: {
     title: { type: String, required: true }
@@ -26,12 +26,12 @@ export default {
 @import '../assets/scss/_extends';
 @import '../assets/scss/_breakpoints';
 
-.preview-pills {
+.pill-section {
   @extend .container;
   margin-bottom: 1rem;
 }
 
-.preview-pills-container {
+.pill-section-container {
   display: grid;
   grid-column-gap: 1rem;
   grid-row-gap: 0.1rem;

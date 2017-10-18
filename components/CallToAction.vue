@@ -1,7 +1,7 @@
 <template>
   <section class="call-to-action">
     <div>
-      <app-nuxt-link class="button" to="/pill/1">Empieza aquí</app-nuxt-link>
+      <app-nuxt-link :is-button="true" to="/pill/1">Empieza aquí</app-nuxt-link>
     </div>
     <video controls poster="~/assets/img/vue.jpg">
       <source src="~/assets/videos/vue-debug.mp4" type="video/mp4">
@@ -22,7 +22,6 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/scss/_extends';
-@import '../assets/scss/_colors';
 @import '../assets/scss/_breakpoints';
 
 .call-to-action {
@@ -45,20 +44,6 @@ export default {
     @media (min-width: $media-breakpoint-medium) {
       width: 70%;
     }
-  }
-
-  .button {
-    background: $color-primary;
-    font-size: 1rem;
-    text-transform: uppercase;
-    color: $color-basic-ligth;
-    padding: 1rem 1.5rem;
-    margin: 1rem;
-    border-radius: 2px;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    display: inline-block;
   }
 }
 </style>
