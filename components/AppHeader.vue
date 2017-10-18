@@ -56,12 +56,11 @@ export default {
   @extend .container;
 
   background: $color-basic-ligth;
-  left: 0;
-  right: 0;
-  height: 3rem;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 
   h1 {
     margin: 0;
