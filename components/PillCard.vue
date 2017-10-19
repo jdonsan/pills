@@ -1,7 +1,7 @@
 <template>
   <div class="pill-card">
     <h4>
-      <app-nuxt-link to="/about">{{ pill.title }}</app-nuxt-link>
+      <app-nuxt-link :to="to">{{ pill.title }}</app-nuxt-link>
     </h4>
     <h5>{{ pill.time }}</h5>
     <tag-list :tags="pill.tags" />
@@ -20,6 +20,11 @@ export default {
   },
   props: {
     pill: { type: Object, required: true }
+  },
+  computed: {
+    to() {
+      return '/pill/' + this.pill.id;
+    }
   }
 }
 </script>
@@ -57,15 +62,6 @@ export default {
 
   h5 {
     font-weight: lighter;
-  }
-
-  button {
-    width: 100%;
-    border: 0;
-    color: $color-basic-ligth;
-    background: $color-dark;
-    padding: .5rem;
-    text-transform: uppercase;
   }
 }
 </style>

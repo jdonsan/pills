@@ -12,7 +12,6 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/scss/_colors';
-@import '../assets/scss/_breakpoints';
 
 .app-footer {
   margin-top: auto;
@@ -22,21 +21,6 @@ export default {
   justify-content: center;
   background: $color-dark;
   color: $color-basic-ligth;
-  position: relative;
-
-  @media (min-width: $media-breakpoint-large) {
-    &:before {
-      content: '';
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      background: inherit;
-      z-index: -1;
-      top: 0;
-      transform-origin: top left;
-      transform: skewY(-2deg);
-    }
-  }
 }
 </style>
 

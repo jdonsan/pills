@@ -13,7 +13,7 @@
     </pill-section>
 
     <pill-section title="Cursos completos">
-      
+      <course-item :course="course" />
     </pill-section>
   </main>
 </template>
@@ -23,13 +23,15 @@ import AppTitle from '~/components/AppTitle';
 import PillSection from '~/components/PillSection';
 import PillCard from '~/components/PillCard';
 import CallToAction from '~/components/CallToAction';
+import CourseItem from '~/components/CourseItem';
 
 export default {
   components: {
     AppTitle,
     PillSection,
     PillCard,
-    CallToAction
+    CallToAction,
+    CourseItem
   },
   head() {
     return {
@@ -48,8 +50,12 @@ export default {
       soonPills: [
         { id: 1, title: 'Creando un nuevo componente', time: '2 minutos', tags: ['js', 'vue'] },
         { id: 2, title: 'Usando eventos personalizados', time: '4 minutos', tags: ['js', 'vue'] }
-      ]
-
+      ],
+      course: {
+        img: require('~/assets/img/vue.jpg'),
+        title: 'Desarrolla aplicaciones con VueJS',
+        pills: 53
+      }
     }
   }
 }
