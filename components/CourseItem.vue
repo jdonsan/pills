@@ -17,11 +17,11 @@ export default {
   props: {
     course: { type: Object, required: true }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/scss/_colors';
+@import "../assets/scss/_colors";
 
 .course-item {
   width: 100%;
