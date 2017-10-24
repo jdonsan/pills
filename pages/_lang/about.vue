@@ -1,9 +1,5 @@
 <template>
   <main>
-    <app-title>
-      {{ $t('default.about') }}
-    </app-title>
-
     <goal-section>
       <goal-card v-for="goal in goals" :key="goal.id" :goal="goal" />
     </goal-section>

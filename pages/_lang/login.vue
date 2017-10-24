@@ -1,6 +1,5 @@
 <template>
   <main>
-    <app-title>{{ $t('default.login') }}</app-title>
     <form-login />
   </main>
 </template>

@@ -1,6 +1,5 @@
 <template>
   <main>
-    <app-title>Pill</app-title>
     <pill-player />
     <pill-post />
     <pill-comments />

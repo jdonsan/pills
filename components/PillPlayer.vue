@@ -31,8 +31,6 @@ export default {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: "video sidebar" "info info";
-  margin-top: -1rem;
-
 
   video {
     width: 100%;

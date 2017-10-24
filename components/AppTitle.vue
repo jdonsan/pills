@@ -24,6 +24,7 @@ export default {
   display: flex;
   height: 5rem;
   background: linear-gradient($color-primary 0%, $color-secondary 100%);
+  text-align: center;
   justify-content: center;
   align-items: center;
   color: $color-basic-ligth;
