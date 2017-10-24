@@ -1,6 +1,6 @@
 <template>
   <li class="app-nav-link" @click="toggle">
-    <a v-if="external" :href="to" target="_blank">
+    <a v-if="external" :href="to" target="_blank" rel="noopener">
       <slot></slot>
     </a>
     <app-nuxt-link v-else :to="to">
