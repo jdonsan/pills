@@ -17,25 +17,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/scss/_breakpoints';
-@import '../assets/scss/_colors';
+@import "../assets/scss/_breakpoints";
+@import "../assets/scss/_colors";
 
 .app-title {
   display: flex;
   height: 5rem;
-  background: linear-gradient($color-primary 0%, $color-secondary 100%);
   text-align: center;
   justify-content: center;
   align-items: center;
-  color: $color-basic-ligth;
   font-size: 1.5rem;
-
 
   img {
     display: none;
   }
 
   &.landing {
+    color: $color-basic-ligth;
     height: 25rem;
     background: #222;
     position: relative;
