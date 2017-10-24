@@ -1,5 +1,5 @@
 <template>
-  <img src="../assets/img/icons/menu.png" @click="toggle" />
+  <img src="../assets/img/icons/menu.png" @click="toggle" alt="" />
 </template>
 
 <script>

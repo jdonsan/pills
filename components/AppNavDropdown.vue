@@ -1,6 +1,6 @@
 <template>
   <li class="app-nav-dropdown">
-    {{ label }}<img src="~/assets/img/icons/arrow_drop_down.png" alt="icon">
+    {{ label }}<img src="~/assets/img/icons/arrow_drop_down.png" alt="">
     <ul>
       <slot></slot>
     </ul>
