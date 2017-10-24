@@ -16,7 +16,7 @@ export default {
 
 .goal-section {
   @extend .container;
-  margin-bottom: 1rem;
+  margin: 1rem auto;
   display: grid;
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
