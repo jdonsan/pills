@@ -28,6 +28,10 @@ export default {
     display: inline-block;
     margin: 0;
   }
+
+  a {
+    color: $color-primary;
+  }
 }
 </style>
 

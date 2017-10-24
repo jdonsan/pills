@@ -62,8 +62,8 @@ export default {
         question: '¿Qué es Pills?',
         answer: `
           Pills es una plataforma de microvídeos formativos (pills o píldoras). 
-          Sabemos que el estudio es importante para ti, pero que no cuentas con 
-          el tiempo uficiente como para hacer largos cursos de formación de semanas con 
+          Sabemos que el estudio es importante para ti, intuímos que no cuentas con 
+          el tiempo suficiente como para hacer largos cursos de formación de semanas con 
           lecciones interminables. En Pills, separamos los conceptos clave en videos
           cortos para que en cualquier momento del día puedas aprender algo nuevo.
         `
@@ -79,8 +79,8 @@ export default {
         question: '¿Hay que seguir un orden para ver cada pill?',
         answer: `
           Aunque nosotros te propondremos un orden específico, cada pill contrendrá un concepto 
-          específico. Puede que existan conceptos más o menos avanzados, pero se intentará que
-          el concepto quede claro de manera práctica y visual.
+          concreto. Puede que existan pills más o menos avanzadas, pero se intentará que
+          el concepto que expliquen quede claro de manera práctica y visual.
         `
       },
       {
@@ -88,9 +88,9 @@ export default {
         answer: `
           Si el proyecto te gusta, puedes colaborar de tres maneras: Sube tus microvídeos formativos
           a Pills y enseña lo que sabes al resto de usuarios (esta funcionalidad todavía no se 
-          encuentra disponible), <a href="https://github.com/jdonsan/pills/projects/1" target="_blank" rel="noopener">desarrolla alguna de las 
-          funcionalidades que puedes encontrar en este tablón</a>. <a href="https://www.patreon.com/_pills" target="_blank" rel="noopener">Haz 
-          una aportación económica en el Parteon que hemos habilitado para la causa</a>.
+          encuentra disponible), desarrolla alguna de las 
+          funcionalidades que puedes encontrar en <a href="https://github.com/jdonsan/pills/projects/1" target="_blank" rel="noopener">este tablón</a>. 
+          O puedes hacer una aportación económica en <a href="https://www.patreon.com/_pills" target="_blank" rel="noopener">el Parteon</a> que hemos habilitado.
         `
       }]
     }
