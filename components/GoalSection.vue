@@ -21,7 +21,11 @@ export default {
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
 
-  @media (min-width: $media-breakpoint-large) {
+  @media (min-width: $media-breakpoint-small) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $media-breakpoint-medium) {
     grid-template-columns: repeat(3, 1fr);
   }
 }
