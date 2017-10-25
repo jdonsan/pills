@@ -4,11 +4,28 @@ module.exports = {
     titleTemplate: '%s - Pills: Aprende mucho en poco tiempo',
     meta: [
       { charset: 'utf-8' },
+      { hid: 'description', name: 'description', content: 'Proyecto Pills' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Proyecto Pills' }
+
+      // CARD FACEBOOK
+      { property: 'og:url', content: 'http://your-url.com/' },
+      { property: 'og:type', content: 'article' },
+      { property: 'og:title', content: 'Pills — Aprende mucho en poco tiempo' },
+      { property: 'og:description', content: 'Pills es una plataforma de microvídeos formativos. Aprende una forma más flexible y cómoda' },
+      { property: 'og:updated_time', content: '2017-10-04T17:20:50' },
+      { property: 'og:image', content: '/pills/favicon.ico' },
+
+      // CARD TWITTER
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:site', content: '@jdonsan' },
+      { name: 'twitter:creator', content: '@jdonsan' },
+      { name: 'twitter:title', content: 'Pills — Aprende mucho en poco tiempo' },
+      { name: 'twitter:description', content: 'Pills es una plataforma de microvídeos formativos. Aprende una forma más flexible y cómoda' },
+      { name: 'twitter:image', content: '/pills/favicon.ico' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/pills/favicon.ico' },
+      { rel: 'manifest', type: 'application/manifest+json', href: '/pills/manifest.json' }
     ]
   },
   loading: { color: '#3B8070' },
