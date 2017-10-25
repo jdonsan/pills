@@ -17,10 +17,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/scss/_colors';
+@import "../assets/scss/_colors";
 
 .faq-item {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 
   h3 {
     text-transform: uppercase;
@@ -29,8 +29,9 @@ export default {
     margin: 0;
   }
 
-  a {
-    color: $color-primary;
+  p {
+    line-height: 1.6rem;
+    font-size: 1.1rem;
   }
 }
 </style>

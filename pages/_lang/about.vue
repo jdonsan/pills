@@ -42,7 +42,7 @@ export default {
         img: require('~/assets/img/goals/goal-1.jpeg'),
         title: 'Aprende a tu ritmo',
         description: 'Pills está pensado para gente que cuenta con poco tiempo. Aprovecha esos minutos que te sobran para aprender algo nuevo cada día',
-        ready: true
+        ready: false
       },
       {
         id: 2,
@@ -84,7 +84,7 @@ export default {
         `
       },
       {
-        question: '¿Cómo puedo colaborar en Pills',
+        question: '¿Cómo puedo colaborar en Pills?',
         answer: `
           Si el proyecto te gusta, puedes colaborar de tres maneras: Sube tus microvídeos formativos
           a Pills y enseña lo que sabes al resto de usuarios (esta funcionalidad todavía no se 
