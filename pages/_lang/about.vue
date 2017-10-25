@@ -89,8 +89,8 @@ export default {
           Si el proyecto te gusta, puedes colaborar de tres maneras: Sube tus microvídeos formativos
           a Pills y enseña lo que sabes al resto de usuarios (esta funcionalidad todavía no se 
           encuentra disponible), desarrolla alguna de las 
-          funcionalidades que puedes encontrar en <a href="https://github.com/jdonsan/pills/projects/1" target="_blank" rel="noopener">este tablón</a>. 
-          O puedes hacer una aportación económica en <a href="https://www.patreon.com/_pills" target="_blank" rel="noopener">el Parteon</a> que hemos habilitado.
+          funcionalidades que queremos que tenga Pills, puedes encontrarlas en <a href="https://github.com/jdonsan/pills/projects/1" target="_blank" rel="noopener">este tablón</a>. 
+          O puedes hacer una aportación económica en <a href="https://www.patreon.com/_pills" target="_blank" rel="noopener">el Patreon</a> que hemos habilitado.
         `
       }]
     }
