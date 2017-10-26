@@ -1,5 +1,8 @@
 module.exports = {
   head: {
+    htmlAttrs: {
+      lang: 'es-ES',
+    },
     title: ' ',
     titleTemplate: '%s - Pills: Aprende mucho en poco tiempo',
     meta: [
