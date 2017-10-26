@@ -1,0 +1,43 @@
+{
+  "short_name": "Pills",
+  "lang": "es-ES",
+  "scope": "/pills/",
+  "name": "Pills",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#42B883",
+  "theme_color": "#42B883",
+  "icons": [
+    {
+      "src": "/pills/icons/launcher-icon-1x.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/pills/icons/launcher-icon-2x.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "/pills/icons/launcher-icon-3x.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/pills/icons/launcher-icon-4x.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/pills/icons/launcher-icon-5x.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/pills/icons/launcher-icon-6x.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "index.html?launcher=true"
+}
